@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('/fonts/GothamPro-Medium.eot');
+    src: local('Gotham Pro-Medium'), local('GothamPro-Medium'),
+        url('/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        /*url('/fonts/GothamPro-Medium.woff2') format('woff2'),*/
+        url('/fonts/GothamPro-Medium.woff') format('woff'),
+        url('/fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('/fonts/GothamProRegular.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+        url('/fonts/GothamProRegular.eot?#iefix') format('embedded-opentype'),
+        /* url('/fonts/GothamProRegular.woff2') format('woff2'),*/
+        url('/fonts/GothamProRegular.woff') format('woff'),
+        url('/fonts/GothamProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zeppelin 53';
+    src: url('/fonts/Zeppelin 53.eot');
+    src: local('Zeppelin 53'), local('Zeppelin 53'),
+        url('/fonts/Zeppelin 53.eot?#iefix') format('embedded-opentype'),
+        /* url('/fonts/Zeppelin 53.woff2') format('woff2'),*/
+        url('/fonts/Zeppelin 53.woff') format('woff'),
+        url('/fonts/Zeppelin 53.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
