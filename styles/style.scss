@@ -1,0 +1,7 @@
+@import url(/styles/style_header_logo.css);
+@import "style_var.scss";
+
+body {
+    background: $color-main;
+    color: $color-text-active;
+}
