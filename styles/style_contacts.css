@@ -1,0 +1,27 @@
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacts__img {
+  width: 255px;
+  height: 409px;
+}
+
+.contacts__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2.778vw;
+  padding-bottom: 5%;
+}
+/*# sourceMappingURL=style_contacts.css.map */

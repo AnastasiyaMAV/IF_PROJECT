@@ -1,5 +1,6 @@
 @import url(/styles/style_header_logo.css);
 @import url(/styles/style_footer.css);
+@import url(/styles/style_contacts.css);
 body {
   height: 100%;
   background: #000000;

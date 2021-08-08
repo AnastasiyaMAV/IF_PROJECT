@@ -1,0 +1,19 @@
+@import "style_var.scss";
+
+.contacts {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.contacts__img {
+    width: 255px;
+    height: 409px;
+}
+
+.contacts__line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2.778vw;
+    padding-bottom: 5%;
+}

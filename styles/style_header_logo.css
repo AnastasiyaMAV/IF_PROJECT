@@ -29,6 +29,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-top: 10%;
 }
 
 .header__menu_sector {
