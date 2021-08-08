@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;CAChC;;AAED,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAChB;;AAED,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,YAAY;EAC7B,SAAS,EAAE,OAAO;EAClB,WAAW,EAAC,0CAA0C;EAEtD,OAAO,EAAE,UAAU;CACtB",
+    "sources": [
+        "style_contacts.scss",
+        "style_var.scss"
+    ],
+    "names": [],
+    "file": "style_contacts.css"
+}
