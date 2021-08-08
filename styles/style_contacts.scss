@@ -6,14 +6,15 @@
 }
 
 .contacts__img {
-    width: 255px;
-    height: 409px;
+    width: 355px;
+    height: 509px;
 }
 
 .contacts__line {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 2.778vw;
-    padding-bottom: 5%;
+    font-size: 1.563vw; //30px
+    font-family:'Gotham Pro', Arial, Helvetica, sans-serif;    
+    padding: 0 15% 5% 0;
 }

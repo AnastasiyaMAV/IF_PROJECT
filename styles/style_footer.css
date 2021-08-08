@@ -14,18 +14,19 @@
 
 .footer__menu_sector {
   display: inline-block;
-  padding: 20px 50px 20px 20px;
+  padding: 20px 80px 20px 20px;
 }
 
 .footer__menu_link {
   color: #FFFFFF80;
-  font-size: 2.315vw;
+  font-size: 1.302vw;
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
 }
 
 .footer__menu_link-copyright {
   /*border: 2px solid blue;*/
-  padding: 0 200px 0 0;
+  padding: 0 400px 0 0;
   color: #FFFFFF80;
-  font-size: 30px;
+  font-size: 1.563vw;
 }
 /*# sourceMappingURL=style_footer.css.map */

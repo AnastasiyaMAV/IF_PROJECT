@@ -36,8 +36,9 @@
 
 .header__menu_sector {
   display: inline-block;
-  padding: 20px 100px 20px 20px;
-  font-size: 24px;
+  padding: 10% 180px 20px 20px;
+  font-size: 1.302vw;
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
 }
 
 .header__menu_sector-span {
