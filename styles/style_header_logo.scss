@@ -1,6 +1,6 @@
 @import "style_var.scss";
 
-.head {
+.header__page {
     /*border: 2px solid red;*/
     display: flex;
     position: sticky;
@@ -17,13 +17,13 @@
     justify-content: center; 
 }
 
-.head__menu_sector {
+.header__menu_sector {
     display: inline-block;
     padding: 20px 100px 20px 20px;
     font-size: 24px;
 }
 
-.head__menu_sector-span {
+.header__menu_sector-span {
     position: relative;
     display: block;
     cursor: default; //курсор стрелочка

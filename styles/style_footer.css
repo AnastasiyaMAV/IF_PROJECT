@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.footer__menu {
+  /*border: 2px solid red;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*перенос строки */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__menu_sector {
+  display: inline-block;
+  padding: 20px 50px 20px 20px;
+}
+
+.footer__menu_link {
+  color: #FFFFFF80;
+  font-size: 24px;
+}
+
+.footer__menu_link-copyright {
+  /*border: 2px solid blue;*/
+  padding: 0 200px 0 0;
+  color: #FFFFFF80;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style_footer.css.map */
