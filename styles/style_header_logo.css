@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.header__page {
+  /*border: 2px solid red;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*перенос строки */
+  padding-top: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /*закрепляет элемент в пределах родительского тега*/
+}
+
+.logo {
+  /*border: 2px solid green;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+.header__menu_sector {
+  display: inline-block;
+  padding: 10% 180px 20px 20px;
+  font-size: 1.302vw;
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+}
+
+.header__menu_sector-span {
+  position: relative;
+  display: block;
+  cursor: default;
+  color: #FFFFFF80;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFFFFF80;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.1px;
+  background: #BDF80A;
+}
+
+span:before {
+  right: -2.5px;
+}
+
+span:after {
+  /*//создания псевдоэлемента внутри элемента после его контента*/
+  right: 2.5px;
+  background: #BDF80A;
+  -webkit-transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  /*движение линии вперед*/
+  background: #BDF80A;
+  width: 100%;
+  -webkit-transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: #BDF80A;
+  width: 100%;
+}
+/*# sourceMappingURL=style_header_logo.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAEA,AAAA,aAAa,CAAC;EACV,0BAA0B;EAC1B,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EAAE,mBAAmB;EACpC,eAAe,EAAE,MAAM;CAC1B;;AAED,AAAA,oBAAoB,CAAC;EACjB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,mBAAmB;CAC/B;;AAED,AAAA,kBAAkB,CAAC;EACf,KAAK,ECbI,SAAS;EDclB,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,0CAA0C;CAC1D;;AAED,AAAA,4BAA4B,CAAC;EACzB,2BAA2B;EAC3B,OAAO,EAAE,WAAW;EACpB,KAAK,ECrBI,SAAS;EDsBlB,SAAS,EAAE,OAAO;CACrB",
+    "sources": [
+        "style_footer.scss",
+        "style_var.scss"
+    ],
+    "names": [],
+    "file": "style_footer.css"
+}
