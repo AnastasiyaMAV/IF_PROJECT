@@ -2,19 +2,3 @@
 @import url(/styles/style_footer.css);
 @import url(/styles/style_contacts.css);
 @import "style_var.scss";
-
-body {
-    height: 100%;
-    background: $color-main;
-    color: $color-text-active;
-}
-
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex: 1 1 auto;
-}
