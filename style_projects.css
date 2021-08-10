@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 1em;
   font-size: 10px;
@@ -13,12 +13,10 @@ body {
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-}
-
-img {
-  max-width: 100%;
-  -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 @-webkit-keyframes fake {
@@ -66,6 +64,11 @@ body {
   left: -10000px;
 }
 
+/*#radio1:focus~.tabs #first-tab,
+#radio2:focus~.tabs #second-tab,
+#radio3:focus~.tabs #third-tab,
+#radio4:focus~.tabs #fourth-tab,
+#radio5:focus~.tabs #fifth-tab {}*/
 .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +125,18 @@ body {
   cursor: default;
 }
 
+#radio1:checked ~ .tabs #first-tab .arrow_label,
+#radio2:checked ~ .tabs #second-tab .arrow_label,
+#radio3:checked ~ .tabs #third-tab .arrow_label,
+#radio4:checked ~ .tabs #fourth-tab .arrow_label,
+#radio5:checked ~ .tabs #fifth-tab .arrow_label {
+  visibility: visible;
+}
+
+.arrow_label {
+  padding-left: 8.871vw;
+}
+
 .tab-label {
   font-size: 24px;
   line-height: 1.6rem;
@@ -132,24 +147,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 40%;
-      -ms-flex: 40%;
-          flex: 40%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   background-color: #0c0c0c;
   color: #FFFFFF;
   padding: .5em;
+}
+
+.arrow_label {
+  visibility: hidden;
+}
+
+.arrow_label:checked {
+  visibility: visible;
 }
 
 .panels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   background-color: #eef3f8;
   color: #030303;
   padding: .5em;
+}
+
+.panels img {
+  max-width: 100%;
+  -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 .container {
@@ -169,9 +198,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  font-size: 36px;
-  font-family: Roboto;
-  font-weight: 300;
+  font-size: 30px;
 }
 
 .panel__txt {
