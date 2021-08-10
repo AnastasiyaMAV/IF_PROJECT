@@ -1,0 +1,50 @@
+.second-block__content {
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-animation-name: if;
+          animation-name: if;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.second-block-image img {
+  width: 100vw;
+}
+
+.second-block__content:hover {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+}
+
+@-webkit-keyframes if {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
+@keyframes if {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+/*# sourceMappingURL=style_if_page.css.map */

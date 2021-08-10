@@ -1,0 +1,69 @@
+$prime: #ff0000;
+$second: #0C1016;
+
+body,
+html {
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $second;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.glitch {
+    font-family: 'Zeppelin 53';
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 144px;
+    position: relative;
+
+    &::after {
+        content: attr(data-trick);
+        position: absolute;
+        top: 0;
+        left: 0.5rem;
+        color: white;
+        background-color: $second;
+        overflow: hidden;
+        text-shadow: -0.5rem 0 $prime;
+        clip: rect(0, 90rem, 0, 0);
+        animation: noise 2s infinite linear alternate-reverse;
+    }
+
+    &::before {
+        content: attr(data-trick);
+        position: absolute;
+        top: 0;
+        left: -1rem;
+        color: white;
+        background-color: $second;
+        overflow: hidden;
+        text-shadow: 0.3rem 0 $prime;
+        clip: rect(0, 90rem, 0, 0);
+        animation: noise 4s infinite linear alternate-reverse;
+    }
+}
+
+@keyframes noise {
+    $steps: 25;
+
+    @for $i from 0 through $steps {
+        #{ percentage($i * (1/$steps))} {
+            clip: rect(random(12)+rem, 99.99rem, random(12)+rem, 0);
+        }
+    }
+}
+
+.arrow {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    padding: 40px;
+}
