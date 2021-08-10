@@ -61,12 +61,17 @@
   color: #FFFFFF80;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
   color: #FFFFFF80;
 }
 
-.header__menu_sector-span:before, .header__menu_sector-span:after {
+.header__menu_sector-span:before,
+.header__menu_sector-span:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -126,6 +131,721 @@ a:hover {
 .header__menu-mobile {
   color: #FFFFFF80;
   font-size: 4.375vw;
+}
+
+body,
+html {
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.glitch {
+  font-family: 'Zeppelin 53';
+  font-weight: 700;
+  font-style: normal;
+  color: #BDF80A;
+  font-size: 144px;
+  position: relative;
+}
+
+.glitch::after {
+  content: attr(data-trick);
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  color: #BDF80A;
+  background-color: #000000;
+  overflow: hidden;
+  text-shadow: -1rem 0 #ff0000;
+  clip: rect(0, 90rem, 0, 0);
+  animation: noise 2s infinite linear alternate-reverse;
+}
+
+.glitch::before {
+  content: attr(data-trick);
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  color: #BDF80A;
+  background-color: #000000;
+  overflow: hidden;
+  text-shadow: 0.3rem 0 #ff0000;
+  clip: rect(0, 90rem, 0, 0);
+  animation: noise 4s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes noise {
+  0% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  4% {
+    clip: rect(11rem, 99.99rem, 4rem, 0);
+  }
+  8% {
+    clip: rect(7rem, 99.99rem, 5rem, 0);
+  }
+  12% {
+    clip: rect(8rem, 99.99rem, 12rem, 0);
+  }
+  16% {
+    clip: rect(7rem, 99.99rem, 1rem, 0);
+  }
+  20% {
+    clip: rect(2rem, 99.99rem, 7rem, 0);
+  }
+  24% {
+    clip: rect(1rem, 99.99rem, 4rem, 0);
+  }
+  28% {
+    clip: rect(9rem, 99.99rem, 8rem, 0);
+  }
+  32% {
+    clip: rect(2rem, 99.99rem, 10rem, 0);
+  }
+  36% {
+    clip: rect(4rem, 99.99rem, 2rem, 0);
+  }
+  40% {
+    clip: rect(3rem, 99.99rem, 10rem, 0);
+  }
+  44% {
+    clip: rect(11rem, 99.99rem, 9rem, 0);
+  }
+  48% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  52% {
+    clip: rect(3rem, 99.99rem, 9rem, 0);
+  }
+  56% {
+    clip: rect(1rem, 99.99rem, 3rem, 0);
+  }
+  60% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  64% {
+    clip: rect(9rem, 99.99rem, 9rem, 0);
+  }
+  68% {
+    clip: rect(2rem, 99.99rem, 9rem, 0);
+  }
+  72% {
+    clip: rect(1rem, 99.99rem, 8rem, 0);
+  }
+  76% {
+    clip: rect(8rem, 99.99rem, 6rem, 0);
+  }
+  80% {
+    clip: rect(2rem, 99.99rem, 10rem, 0);
+  }
+  84% {
+    clip: rect(2rem, 99.99rem, 10rem, 0);
+  }
+  88% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  92% {
+    clip: rect(4rem, 99.99rem, 11rem, 0);
+  }
+  96% {
+    clip: rect(9rem, 99.99rem, 6rem, 0);
+  }
+  100% {
+    clip: rect(2rem, 99.99rem, 1rem, 0);
+  }
+}
+
+@keyframes noise {
+  0% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  4% {
+    clip: rect(11rem, 99.99rem, 4rem, 0);
+  }
+  8% {
+    clip: rect(7rem, 99.99rem, 5rem, 0);
+  }
+  12% {
+    clip: rect(8rem, 99.99rem, 12rem, 0);
+  }
+  16% {
+    clip: rect(7rem, 99.99rem, 1rem, 0);
+  }
+  20% {
+    clip: rect(2rem, 99.99rem, 7rem, 0);
+  }
+  24% {
+    clip: rect(1rem, 99.99rem, 4rem, 0);
+  }
+  28% {
+    clip: rect(9rem, 99.99rem, 8rem, 0);
+  }
+  32% {
+    clip: rect(2rem, 99.99rem, 10rem, 0);
+  }
+  36% {
+    clip: rect(4rem, 99.99rem, 2rem, 0);
+  }
+  40% {
+    clip: rect(3rem, 99.99rem, 10rem, 0);
+  }
+  44% {
+    clip: rect(11rem, 99.99rem, 9rem, 0);
+  }
+  48% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  52% {
+    clip: rect(3rem, 99.99rem, 9rem, 0);
+  }
+  56% {
+    clip: rect(1rem, 99.99rem, 3rem, 0);
+  }
+  60% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  64% {
+    clip: rect(9rem, 99.99rem, 9rem, 0);
+  }
+  68% {
+    clip: rect(2rem, 99.99rem, 9rem, 0);
+  }
+  72% {
+    clip: rect(1rem, 99.99rem, 8rem, 0);
+  }
+  76% {
+    clip: rect(8rem, 99.99rem, 6rem, 0);
+  }
+  80% {
+    clip: rect(2rem, 99.99rem, 10rem, 0);
+  }
+  84% {
+    clip: rect(2rem, 99.99rem, 10rem, 0);
+  }
+  88% {
+    clip: rect(10rem, 99.99rem, 8rem, 0);
+  }
+  92% {
+    clip: rect(4rem, 99.99rem, 11rem, 0);
+  }
+  96% {
+    clip: rect(9rem, 99.99rem, 6rem, 0);
+  }
+  100% {
+    clip: rect(2rem, 99.99rem, 1rem, 0);
+  }
+}
+
+.logo-glitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+}
+
+.arrow-page-down {
+  padding-bottom: 20px;
+}
+
+.if-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-animation-name: if;
+          animation-name: if;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.if-block-image img {
+  width: 90vw;
+}
+
+.if-block__content:hover {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+}
+
+@-webkit-keyframes if {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes if {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-size: 1.875vw;
+  background-color: #000000;
+}
+
+/* Android 2.3 :checked fix */
+@keyframes fake {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  -webkit-animation: fake 10s infinite;
+          animation: fake 10s infinite;
+}
+
+.radio-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  /*height: 80%;*/
+}
+
+/*.radio-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    height: 100vmin;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+*/
+/* спрятан переключатель*/
+.radio-tabs .state {
+  position: absolute;
+  top: -100%;
+}
+
+/* Tab button container */
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+  height: 100vmin;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* Tab button */
+.radio-tabs .tab_profile {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1em;
+  color: #FFFFFF80;
+  cursor: pointer;
+  height: 60px;
+}
+
+/*Стиль при нажатии на меню*/
+#radio1:checked ~ .tabs #first-tab_profile,
+#radio2:checked ~ .tabs #second-tab_profile,
+#radio3:checked ~ .tabs #third-tab_profile,
+#radio4:checked ~ .tabs #fourth-tab_profile,
+#radio5:checked ~ .tabs #fifth-tab_profile {
+  /*font-weight: 900; */
+  cursor: default;
+  color: #FFFFFF;
+}
+
+/* стиль всех панелей */
+.radio-tabs .panels {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: .5em;
+}
+
+/* стиль панели */
+.radio-tabs .panel {
+  display: none;
+  margin-left: 100px;
+}
+
+/* при нажатии на меню*/
+#radio1:checked ~ .panels #first-panel_profile,
+#radio2:checked ~ .panels #second-panel_profile,
+#radio3:checked ~ .panels #third-panel_profile,
+#radio4:checked ~ .panels #fourth-panel_profile,
+#radio5:checked ~ .panels #fifth-panel_profile {
+  display: block;
+}
+
+/*стить текста панели*/
+.panels_profile_slide_title {
+  text-align: justify;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+#first-tab_profile,
+#second-tab_profile,
+#third-tab_profile,
+#fourth-tab_profile,
+#fifth-tab_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+/* стиль контейнера со стрелками */
+.profile_arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 2%;
+      -ms-flex: 2%;
+          flex: 2%;
+  height: 100vmin;
+  visibility: hidden;
+}
+
+.radio-tabs .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  height: 60px;
+  padding: 1em;
+}
+
+/*поведение стрелки принажатии меню*/
+#radio1:checked ~ .profile_arrow #first-tab_arrow,
+#radio2:checked ~ .profile_arrow #second-tab_arrow,
+#radio3:checked ~ .profile_arrow #third-tab_arrow,
+#radio4:checked ~ .profile_arrow #fourth-tab_arrow,
+#radio5:checked ~ .profile_arrow #fifth-tab_arrow {
+  visibility: visible;
+}
+
+body {
+  font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1em;
+  font-size: 10px;
+  background-color: black;
+}
+
+.row {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+@-webkit-keyframes fake {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fake {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  -webkit-animation: fake 1s infinite;
+  animation: fake 1s infinite;
+}
+
+.radio-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  height: 100vmin;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.radio-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+
+/*#radio1:focus~.tabs #first-tab,
+#radio2:focus~.tabs #second-tab,
+#radio3:focus~.tabs #third-tab,
+#radio4:focus~.tabs #fourth-tab,
+#radio5:focus~.tabs #fifth-tab {}*/
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-flex: 10%;
+  -ms-flex: 10%;
+  flex: 10%;
+  height: 400px;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.radio-tabs .tab {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border: 1px solid rgba(194, 191, 22, 0.1);
+  height: 60px;
+}
+
+.radio-tabs .tab:active {
+  color: #FFFFFF;
+  border: black;
+}
+
+#radio1:checked ~ .tabs #first-tab,
+#radio2:checked ~ .tabs #second-tab,
+#radio3:checked ~ .tabs #third-tab,
+#radio4:checked ~ .tabs #fourth-tab,
+#radio5:checked ~ .tabs #fifth-tab {
+  background-color: black;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+#radio1:checked ~ .tabs #first-tab .arrow_label,
+#radio2:checked ~ .tabs #second-tab .arrow_label,
+#radio3:checked ~ .tabs #third-tab .arrow_label,
+#radio4:checked ~ .tabs #fourth-tab .arrow_label,
+#radio5:checked ~ .tabs #fifth-tab .arrow_label {
+  visibility: visible;
+}
+
+.arrow_label {
+  padding-left: 8.871vw;
+}
+
+.tab-label {
+  font-size: 24px;
+  line-height: 1.6rem;
+  padding: 10px;
+}
+
+.radio-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #0c0c0c;
+  color: #FFFFFF;
+  padding: .5em;
+}
+
+.arrow_label {
+  visibility: hidden;
+}
+
+.arrow_label:checked {
+  visibility: visible;
+}
+
+.panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #eef3f8;
+  color: #030303;
+  padding: .5em;
+}
+
+.panels img {
+  max-width: 100%;
+  -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  font-size: 30px;
+}
+
+.panel__txt {
+  max-width: 80%;
+}
+
+.radio-tabs .panel {
+  display: none;
+  margin-left: 100px;
+}
+
+#radio1:checked ~ .panels #first-panel,
+#radio2:checked ~ .panels #second-panel,
+#radio3:checked ~ .panels #third-panel,
+#radio4:checked ~ .panels #fourth-panel,
+#radio5:checked ~ .panels #fifth-panel {
+  display: block;
 }
 
 body {
