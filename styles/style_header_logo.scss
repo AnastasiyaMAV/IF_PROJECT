@@ -1,13 +1,14 @@
 @import "style_var.scss";
 
 .header__page {
-    border: 2px solid red;
+    //border: 2px solid red;
     @media screen and (max-width: 749px) {
         display: none;
     }
     @media screen and (min-width: 750px) and (max-width: 1023px) {
         display: flex;
-
+        margin-top: 50px;
+        margin-bottom: 50px;
         justify-content: space-around;
         align-items: center;
     }
