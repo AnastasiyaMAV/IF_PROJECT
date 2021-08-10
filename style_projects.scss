@@ -1,0 +1,185 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1em;
+    font-size: 10px;
+    background-color: black;
+}
+
+.row {
+    background-color: black;
+    display: flex;
+    flex-basis: 100%;
+
+}
+
+img {
+    max-width: 100%;
+    -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+}
+
+@-webkit-keyframes fake {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    -webkit-animation: fake 1s infinite;
+    animation: fake 1s infinite;
+}
+
+.radio-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    height: 100vmin;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.radio-tabs .state {
+    position: absolute;
+    left: -10000px;
+}
+
+#radio1:focus~.tabs #first-tab,
+#radio2:focus~.tabs #second-tab,
+#radio3:focus~.tabs #third-tab,
+#radio4:focus~.tabs #fourth-tab,
+#radio5:focus~.tabs #fifth-tab {}
+
+.tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-flex: 10%;
+    -ms-flex: 10%;
+    flex: 10%;
+
+    height: 400px;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.radio-tabs .tab {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: 1px solid rgba(194, 191, 22, 0.1);
+    height: 60px;
+}
+
+.radio-tabs .tab:active {
+    color: #FFFFFF;
+    border: black;
+}
+
+#radio1:checked~.tabs #first-tab,
+#radio2:checked~.tabs #second-tab,
+#radio3:checked~.tabs #third-tab,
+#radio4:checked~.tabs #fourth-tab,
+#radio5:checked~.tabs #fifth-tab {
+    background-color: black;
+
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.tab-label {
+    font-size: 24px;
+    line-height: 1.6rem;
+    padding: 10px;
+}
+
+.radio-tabs {
+    display: flex;
+    flex: 40%;
+    background-color: #0c0c0c;
+    color: #FFFFFF;
+    padding: .5em;
+
+
+}
+
+.panels {
+    display: flex;
+    flex: 60%;
+    background-color: #eef3f8;
+    color: #030303;
+    padding: .5em;
+
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 300;
+
+
+}
+
+.panel__txt {
+    max-width: 80%;
+}
+
+
+.radio-tabs .panel {
+    display: none;
+    margin-left: 100px;
+}
+
+#radio1:checked~.panels #first-panel,
+#radio2:checked~.panels #second-panel,
+#radio3:checked~.panels #third-panel,
+#radio4:checked~.panels #fourth-panel,
+#radio5:checked~.panels #fifth-panel {
+    display: block;
+}
