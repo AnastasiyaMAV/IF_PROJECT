@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.header__page {
-  border: 2px solid red;
-}
-
 @media screen and (max-width: 749px) {
   .header__page {
     display: none;
