@@ -57,8 +57,8 @@ a:hover {
     color: $color-text;
 }
 
-span:before,
-span:after {
+.header__menu_sector-span:before,
+.header__menu_sector-span:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -68,26 +68,26 @@ span:after {
     background: $color-yellow;
 }
 
-span:before {
+.header__menu_sector-span:before {
     //создания псевдоэлемента внутри элемента перед его контентом*/
     right: -2.5px;
 }
 
-span:after {
+.header__menu_sector-span:after {
     /*//создания псевдоэлемента внутри элемента после его контента*/
     right: 2.5px;
     background: $color-yellow;
     transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1); //первые два — координаты x, y первой точки; вторые два — координаты x, y второй точки.*/
 }
 
-span:hover:before {
+.header__menu_sector-span:hover:before {
     /*движение линии вперед*/
     background: $color-yellow;
     width: 100%;
     transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after {
+.header__menu_sector-span:hover:after {
     //движение линии назад
     background: $color-yellow; //Устанавливает прозрачный фон вместо перечеркнутой линии.
     width: 100%;
