@@ -1,0 +1,148 @@
+@import url(/styles/style_fonts.css);
+@import "style_var.scss";
+body {
+    font-family:'Gotham Pro', Arial, Helvetica, sans-serif;   
+    font-size: 36px;
+    font-size: 1.875vw;
+    background-color: $color-main;
+}
+
+/* Android 2.3 :checked fix */
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {        
+    animation: fake 10s infinite;
+}
+
+.radio-tabs {
+display: flex;
+flex-flow: row;
+/*height: 80%;*/
+border: solid red;
+}
+/*.radio-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    height: 100vmin;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+*/
+/* спрятан переключатель*/
+.radio-tabs .state {
+position: absolute;
+    top: -100%;
+}
+
+/* Tab button container */
+.tabs {
+display: flex;
+flex-flow: column;
+justify-content: space-around;
+flex: 10%;
+height: 100vmin;
+align-self: center;
+}
+
+/* Tab button */
+.radio-tabs .tab_profile {
+    flex: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    color: $color-text;
+    cursor: pointer;
+    height: 60px;
+}
+
+/*Стиль при нажатии на меню*/
+#radio1:checked ~ .tabs #first-tab_profile,
+#radio2:checked ~ .tabs #second-tab_profile,
+#radio3:checked ~ .tabs #third-tab_profile,
+#radio4:checked ~ .tabs #fourth-tab_profile,
+#radio5:checked ~ .tabs #fifth-tab_profile {
+    /*font-weight: 900; */
+    cursor: default;
+    color: $color-text-active;
+}
+/* стиль всех панелей */
+.radio-tabs .panels {
+    flex: 70%;
+    background-color: $color-main;
+    color: $color-text-active;
+    padding: .5em;
+}
+/* стиль панели */
+.radio-tabs .panel {
+    display: none;
+    margin-left: 100px;
+}
+/* при нажатии на меню*/
+#radio1:checked ~ .panels #first-panel_profile,
+#radio2:checked ~ .panels #second-panel_profile,
+#radio3:checked ~ .panels #third-panel_profile,
+#radio4:checked ~ .panels #fourth-panel_profile,
+#radio5:checked ~ .panels #fifth-panel_profile {
+    display: block;
+}
+/*стить текста панели*/
+.panels_profile_slide_title {
+text-align: justify;
+text-transform: uppercase;
+font-size: 1.8rem;
+}
+
+#first-tab_profile,
+#second-tab_profile,
+#third-tab_profile,
+#fourth-tab_profile,
+#fifth-tab_profile {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+/* стиль контейнера со стрелками */
+.profile_arrow {
+display: flex;
+flex-flow: column;
+flex: 2%;
+height: 100vmin;
+visibility: hidden;
+}
+
+.radio-tabs .arrow {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    height: 60px;
+    padding: 1em;
+}
+
+/*поведение стрелки принажатии меню*/
+#radio1:checked ~ .profile_arrow #first-tab_arrow,
+#radio2:checked ~ .profile_arrow #second-tab_arrow,
+#radio3:checked ~ .profile_arrow #third-tab_arrow,
+#radio4:checked ~ .profile_arrow #fourth-tab_arrow,
+#radio5:checked ~ .profile_arrow #fifth-tab_arrow {
+    visibility: visible;
+}
