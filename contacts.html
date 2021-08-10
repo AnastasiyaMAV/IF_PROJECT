@@ -14,26 +14,16 @@
 <body>
     <div class="wrapper__page">
         <header class="header__page">
-            <a href="#"><img class="logo" src="images/logo_esli.png" alt=""></a>
-            <nav class="header__menu">
-                <ul>
-                    <li class="header__menu_sector">
-                        <a href="#">
-                            <span class="header__menu_sector-span">ПРОФИЛЬ</span>
-                        </a>
-                    </li>
-                    <li class="header__menu_sector">
-                        <a href="#">
-                            <span class="header__menu_sector-span">ПРОЕКТЫ</span>
-                        </a>
-                    </li>
-                    <li class="header__menu_sector">
-                        <a href="#">
-                            <span class="header__menu_sector-span">КОНТАКТЫ</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="#"><img class="logo" src="images/logo_esli.png" alt="logo_esli"></a>
+            <div class="header__menu_sector">
+                <a href="#"><span class="header__menu_sector-span">ПРОФИЛЬ</span></a>
+            </div>
+            <div class="header__menu_sector">
+                <a href="#"><span class="header__menu_sector-span">ПРОЕКТЫ</span></a>
+            </div>
+            <div class="header__menu_sector">
+                <a href="#"><span class="header__menu_sector-span">КОНТАКТЫ</span></a>
+            </div>        
         </header>
         
         <article class="content">
@@ -47,20 +37,29 @@
             </div>
         </article>
 
-        <footer>            
-            <nav class="footer__menu">
-                <p class="footer__menu_link-copyright">&copy; 2020</p>
-                <ul>
-                    <!--<li class="footer__menu_sector"><a href="#" class="footer__menu_link-copyright">&copy; 2020</a></li>-->
-                    <li class="footer__menu_sector"><a href="#" class="footer__menu_link">LinkedIN</a></li>
-                    <li class="footer__menu_sector"><a href="#" class="footer__menu_link">Behance</a></li>
-                    <li class="footer__menu_sector"><a href="#" class="footer__menu_link">Instagram</a></li>
-                    <li class="footer__menu_sector">
-                        <a href="#"><img class="footer__menu_link-check" src="images/check_up.png" alt="check_up"></a>
-                    </li>
-                </ul>
-            </nav>
+        <footer class="footer__menu">  
+            <div class="footer__menu_link-copyright">&copy; 2020
+            </div>
+            <div class="footer__menu_sector">
+                <a href="#" class="footer__menu_link">LinkedIN</a>
+            </div>
+            <div class="footer__menu_sector">
+                <a href="#" class="footer__menu_link">Behance</a>
+            </div>
+            <div class="footer__menu_sector">
+                <a href="#" class="footer__menu_link">Instagram</a>
+            </div>
+            <div class="footer__menu_sector">
+                <a href="#">
+                    <img class="footer__menu_link-check" src="images/check_up.png" alt="check_up">
+                </a>
+            </div>
         </footer>
+        <header class="header__page-mobile">
+            <a href="#" class="header__menu-mobile">ПРОФИЛЬ</a>
+            <a href="#" class="header__menu-mobile">ПРОЕКТЫ</a>
+            <a href="#" class="header__menu-mobile">КОНТАКТЫ</a>
+        </header>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
