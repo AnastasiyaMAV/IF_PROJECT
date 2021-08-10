@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 1em;
     font-size: 10px;
@@ -10,14 +10,11 @@ body {
     background-color: black;
     display: flex;
     flex-basis: 100%;
+    flex-flow: column;
 
 }
 
-img {
-    max-width: 100%;
-    -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
-    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
-}
+
 
 @-webkit-keyframes fake {
     from {
@@ -66,11 +63,13 @@ body {
     left: -10000px;
 }
 
-#radio1:focus~.tabs #first-tab,
+.logo-projects {}
+
+/*#radio1:focus~.tabs #first-tab,
 #radio2:focus~.tabs #second-tab,
 #radio3:focus~.tabs #third-tab,
 #radio4:focus~.tabs #fourth-tab,
-#radio5:focus~.tabs #fifth-tab {}
+#radio5:focus~.tabs #fifth-tab {}*/
 
 .tabs {
     display: -webkit-box;
@@ -90,6 +89,8 @@ body {
     -ms-flex-item-align: center;
     align-self: center;
 }
+
+
 
 .radio-tabs .tab {
     -webkit-box-flex: 0;
@@ -117,6 +118,7 @@ body {
     border: black;
 }
 
+
 #radio1:checked~.tabs #first-tab,
 #radio2:checked~.tabs #second-tab,
 #radio3:checked~.tabs #third-tab,
@@ -126,6 +128,16 @@ body {
 
     color: #FFFFFF;
     cursor: default;
+
+    .arrow_label {
+        visibility: visible;
+    }
+
+
+}
+
+.arrow_label {
+    padding-left: 8.871vw;
 }
 
 .tab-label {
@@ -136,21 +148,32 @@ body {
 
 .radio-tabs {
     display: flex;
-    flex: 40%;
+    flex: 50%;
     background-color: #0c0c0c;
     color: #FFFFFF;
     padding: .5em;
+}
 
+.arrow_label {
+    visibility: hidden;
 
+    &:checked {
+        visibility: visible;
+    }
 }
 
 .panels {
     display: flex;
-    flex: 60%;
+    flex: 50%;
     background-color: #eef3f8;
     color: #030303;
     padding: .5em;
 
+    img {
+        max-width: 100%;
+        -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+    }
 }
 
 .container {
@@ -159,11 +182,7 @@ body {
     align-items: center;
     justify-content: center;
     flex: 0 0 100%;
-    font-size: 36px;
-    font-family: Roboto;
-    font-weight: 300;
-
-
+    font-size: 30px;
 }
 
 .panel__txt {
