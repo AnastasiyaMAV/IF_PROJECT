@@ -1,8 +1,4 @@
-body {
-    background-color: black;
-}
-
-.second-block__content {
+.if-block__content {
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -15,11 +11,11 @@ body {
     animation-fill-mode: forwards;
 }
 
-.second-block-image img {
+.if-block-image img {
     width: 90vw;
 }
 
-.second-block__content:hover {
+.if-block__content:hover {
     filter: blur(1rem);
     transition-duration: 5s;
 }
@@ -30,6 +26,6 @@ body {
     }
 
     100% {
-        transform: translateY(15vh);
+        transform: translateY(0);
     }
 }

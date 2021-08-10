@@ -1,8 +1,4 @@
-body {
-  background-color: black;
-}
-
-.second-block__content {
+.if-block__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,11 +22,11 @@ body {
           animation-fill-mode: forwards;
 }
 
-.second-block-image img {
+.if-block-image img {
   width: 90vw;
 }
 
-.second-block__content:hover {
+.if-block__content:hover {
   -webkit-filter: blur(1rem);
           filter: blur(1rem);
   -webkit-transition-duration: 5s;
@@ -43,8 +39,8 @@ body {
             transform: translateY(100vh);
   }
   100% {
-    -webkit-transform: translateY(15vh);
-            transform: translateY(15vh);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -54,8 +50,8 @@ body {
             transform: translateY(100vh);
   }
   100% {
-    -webkit-transform: translateY(15vh);
-            transform: translateY(15vh);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=while_scrolling.css.map */
