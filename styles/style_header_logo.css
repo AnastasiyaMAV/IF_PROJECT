@@ -66,7 +66,7 @@ a:hover {
   color: #FFFFFF80;
 }
 
-span:before, span:after {
+.header__menu_sector-span:before, .header__menu_sector-span:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -76,11 +76,11 @@ span:before, span:after {
   background: #BDF80A;
 }
 
-span:before {
+.header__menu_sector-span:before {
   right: -2.5px;
 }
 
-span:after {
+.header__menu_sector-span:after {
   /*//создания псевдоэлемента внутри элемента после его контента*/
   right: 2.5px;
   background: #BDF80A;
@@ -88,7 +88,7 @@ span:after {
   transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
+.header__menu_sector-span:hover:before {
   /*движение линии вперед*/
   background: #BDF80A;
   width: 100%;
@@ -96,7 +96,7 @@ span:hover:before {
   transition: width 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after {
+.header__menu_sector-span:hover:after {
   background: #BDF80A;
   width: 100%;
 }
