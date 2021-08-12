@@ -1,61 +1,13 @@
 @import "style_var";
 
-body {
-    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    font-size: 1em;
-    font-size: 10px;
-    background-color: black;
-}
-
-.row {
-    background-color: black;
-    display: flex;
-    flex-basis: 100%;
-    flex-flow: column;
-
-}
-
-
-@-webkit-keyframes fake {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fake {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-body {
-    -webkit-animation: fake 1s infinite;
-    animation: fake 1s infinite;
+.container-projects {
+    margin: 0 auto;
+    flex: 1 1 auto;
+    margin-top: 30px;
 }
 
 .radio-tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    height: 100vmin;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -64,98 +16,42 @@ body {
     left: -10000px;
 }
 
-
-
-/*#radio1:focus~.tabs #first-tab,
-#radio2:focus~.tabs #second-tab,
-#radio3:focus~.tabs #third-tab,
-#radio4:focus~.tabs #fourth-tab,
-#radio5:focus~.tabs #fifth-tab {}*/
-
 .tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-flex: 10%;
-    -ms-flex: 10%;
-    flex: 10%;
-
-    height: 400px;
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-
-
-
-.radio-tabs .tab {
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    padding: 1em;
-    background-color: black;
-    color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start;
+    color: $color-text;
     cursor: pointer;
-    border: 1px solid rgba(194, 191, 22, 0.1);
-    height: 60px;
 }
 
 .radio-tabs .tab:active {
-    color: #FFFFFF;
-    border: black;
+    color: $color-text-active;
 }
-
 
 #radio1:checked~.tabs #first-tab,
 #radio2:checked~.tabs #second-tab,
 #radio3:checked~.tabs #third-tab,
 #radio4:checked~.tabs #fourth-tab,
 #radio5:checked~.tabs #fifth-tab {
-    background-color: black;
-
-    color: #FFFFFF;
+    color: $color-text-active;
     cursor: default;
 
     .arrow_label {
         visibility: visible;
     }
-
-
-}
-
-.arrow_label {
-    padding-left: 8.871vw;
 }
 
 .tab-label {
-    font-size: 24px;
-    line-height: 1.6rem;
-    padding: 10px;
-}
-
-.radio-tabs {
     display: flex;
-    flex: 50%;
-    background-color: #0c0c0c;
-    color: #FFFFFF;
-    padding: .5em;
+    justify-content: space-between;
+    font-size: 30px;
+    line-height: 1.6rem;
+    padding: 20px 0;
 }
 
 .arrow_label {
+    margin-left: 80px;
     visibility: hidden;
 
     &:checked {
@@ -163,33 +59,25 @@ body {
     }
 }
 
-.panels {
-    display: flex;
-    flex: 50%;
-    background-color: #eef3f8;
-    color: #030303;
-    padding: .5em;
-
-    img {
-        max-width: 100%;
-        -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
-        filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
-    }
+.panel__img img {
+    max-width: 100%;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 .container {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 0 0 100%;
-    font-size: 30px;
+    background-color: white;
+    padding: 10px;
 }
 
 .panel__txt {
-    max-width: 80%;
+    font-size: 25px;
+    color: $color-main;
+    margin-top: 20px;
 }
-
 
 .radio-tabs .panel {
     display: none;

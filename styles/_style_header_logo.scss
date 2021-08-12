@@ -1,38 +1,16 @@
 @import "style_var";
 
 .header__page {
-
-    //border: 2px solid red;
-    @media screen and (max-width: 749px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 750px) and (max-width: 1023px) {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        justify-content: space-around;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 5vh auto;
 }
 
 .logo {
-    @media screen and (max-width: 1023px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 1024px) {
-        max-width: 100%;
-        max-height: 100%;
-    }
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .header__menu_sector {
@@ -93,6 +71,43 @@ a:hover {
     width: 100%;
 }
 
+//медиа запросы
+
+/*.header__page {
+
+    //border: 2px solid red;
+    @media screen and (max-width: 749px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 750px) and (max-width: 1023px) {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.logo {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
 .header__page-mobile {
     @media screen and (max-width: 360px) {
         display: flex;
@@ -111,4 +126,4 @@ a:hover {
 .header__menu-mobile {
     color: $color-text;
     font-size: 4.375vw; //14px
-}
+}*/
