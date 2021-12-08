@@ -10,7 +10,6 @@
 
 .logo {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .header__menu_sector {
@@ -71,59 +70,51 @@ a:hover {
     width: 100%;
 }
 
-//медиа запросы
-
-/*.header__page {
-
-    //border: 2px solid red;
-    @media screen and (max-width: 749px) {
+@media screen and (max-width: 360px) {
+    .header__page {
         display: none;
     }
-
-    @media screen and (min-width: 750px) and (max-width: 1023px) {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        justify-content: space-around;
-        align-items: center;
+    
+    .header__burger_profile, 
+    .header__burger_project, 
+    .header__burger_contact{
+        color: $color-text;
     }
 }
 
-.logo {
-    @media screen and (max-width: 1023px) {
+@media screen and (min-width: 361px) and (max-width: 499px) {
+    .header__page {
         display: none;
     }
-
-    @media screen and (min-width: 1024px) {
-        max-width: 100%;
-        max-height: 100%;
+    
+    .header__burger_profile, 
+    .header__burger_project, 
+    .header__burger_contact{
+        color: $color-text;
     }
 }
 
-.header__page-mobile {
-    @media screen and (max-width: 360px) {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    @media screen and (min-width: 361px) and (max-width: 1023px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .header__burger {
         display: none;
     }
 
-    @media screen and (min-width: 1024px) {
+    .header__burger_profile, 
+    .header__burger_project, 
+    .header__burger_contact{
+        color: $color-text;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .header__burger {
         display: none;
     }
 }
 
-.header__menu-mobile {
-    color: $color-text;
-    font-size: 4.375vw; //14px
-}*/
+@media screen and (min-width: 1024px) {
+    .header__burger {
+        display: none;
+    }
+}
