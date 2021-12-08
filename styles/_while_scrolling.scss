@@ -4,7 +4,7 @@
 
 .if-block__content {
     transform: translateY(80vh);
-    animation-name: if;
+    animation-name: 'if';
     animation-duration: 3s;
     animation-delay: 0s;
     animation-timing-function: linear;
