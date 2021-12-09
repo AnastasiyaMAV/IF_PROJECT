@@ -78,6 +78,11 @@ a:hover {
     .header__page {
         display: none;
     }
+
+    .header__burger {
+        width: 320px;
+        text-align: center;
+    }
     
     .header__burger_profile, 
     .header__burger_project, 
@@ -91,6 +96,11 @@ a:hover {
         display: none;
     }
     
+    .header__burger {
+        width: 375px;
+        text-align: center;
+    }
+
     .header__burger_profile, 
     .header__burger_project, 
     .header__burger_contact{
