@@ -4,12 +4,6 @@
     background: url(../images/if_blur.png) no-repeat center/100%;
 }
 
-.container-profile {
-    margin: 0 auto;
-    flex: 1 1 auto;
-    margin-top: 30px;
-}
-
 .radio-tabs {
     max-width: 80vw;
 }
@@ -64,13 +58,6 @@
     display: block;
 }
 
-.panels_profile_slide_title {
-    font-size: 30px;
-    font-weight: 300;
-    color: $color-text-active;
-    text-align: left;
-}
-
 #radio1:checked~.arrow_profile #first-tab_arrow,
 #radio2:checked~.arrow_profile #second-tab_arrow,
 #radio3:checked~.arrow_profile #third-tab_arrow,
@@ -78,4 +65,78 @@
 #radio5:checked~.arrow_profile #fifth-tab_arrow {
     color: $color-text-active;
     cursor: default;
+}
+
+@media screen and (max-width: 360px) {
+    .container-profile  {
+        display: none;
+    }
+
+    .accordion-profile {
+        margin-top: 25px;
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 499px) {
+    .container-profile  {
+        display: none;
+    }
+
+    .accordion-profile {
+        margin-top: 25px;
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .accordion-profile {
+        display: none;
+    }
+
+    .container-profile {
+        margin: 0 auto;
+        flex: 1 1 auto;
+        margin-top: 30px;
+    }
+
+    .panels_profile_slide_title {
+        font-size: 20px;
+        font-weight: 300;
+        color: $color-text-active;
+        text-align: left;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .accordion-profile {
+        display: none;
+    }
+
+    .container-profile {
+        margin: 0 auto;
+        flex: 1 1 auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .accordion-profile {
+        display: none;
+    }
+
+    .container-profile {
+        margin: 0 auto;
+        flex: 1 1 auto;
+        margin-top: 30px;
+    }
+
+    .panels_profile_slide_title {
+        font-size: 30px;
+        font-weight: 300;
+        color: $color-text-active;
+        text-align: left;
+        width: 500px;
+    }
 }
