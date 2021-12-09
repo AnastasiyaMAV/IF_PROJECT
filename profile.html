@@ -18,16 +18,37 @@
 
 <body>
     <div class="wrapper">
-        <header class="header__page">
-            <a href="index.html"><img class="logo" src="images/logo_esli.png" alt="logo_esli"></a>
-            <div class="header__menu_sector">
-                <a href="profile.html"><span class="header__menu_sector-span">ПРОФИЛЬ</span></a>
+        <header class="header__main">
+            <div class="header__page">
+                <a href="index.html"><img class="logo" src="images/logo_esli.png" alt="logo_esli"></a>
+                <div class="header__menu_sector">
+                    <a href="profile.html"><span class="header__menu_sector-span">ПРОФИЛЬ</span></a>
+                </div>
+                <div class="header__menu_sector">
+                    <a href="projects.html"><span class="header__menu_sector-span">ПРОЕКТЫ</span></a>
+                </div>
+                <div class="header__menu_sector">
+                    <a href="contacts.html"><span class="header__menu_sector-span">КОНТАКТЫ</span></a>
+                </div>
             </div>
-            <div class="header__menu_sector">
-                <a href="projects.html"><span class="header__menu_sector-span">ПРОЕКТЫ</span></a>
-            </div>
-            <div class="header__menu_sector">
-                <a href="contacts.html"><span class="header__menu_sector-span">КОНТАКТЫ</span></a>
+            <div class="header__burger">
+                <a href="index.html"><img class="logo" src="images/logo_esli.png" alt="logo_esli"></a>
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                            <div><a class="header__burger_profile" href="profile.html">ПРОФИЛЬ</a></div>
+                            <div><a class="header__burger_project" href="projects.html"><span>ПРОЕКТЫ</a></div>
+                            <div><a class="header__burger_contact" href="contacts.html"><span>КОНТАКТЫ</a></div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="container-profile background-profile-img">

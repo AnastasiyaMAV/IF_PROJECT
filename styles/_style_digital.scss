@@ -1,48 +1,7 @@
 @import "style_var";
 
-.container-glitch {
-    padding: 30vh 0;
-    flex: 1 1 auto;
-}
-
-.start-page_image {
-    background: url(../images/start-page_background.png) no-repeat left/20%;
-}
-
 .header_start-page {
     width: 50vw;
-}
-
-.glitch {
-    color: $color-yellow;
-    position: relative;
-    font: normal 700 120px 'Zeppelin 53';
-
-    &::after {
-        content: attr(data-trick);
-        position: absolute;
-        top: 0;
-        left: 0.5rem;
-        color: $color-yellow;
-        background-color: $color-main;
-        overflow: hidden;
-        text-shadow: -0.5rem 0 $color-glitch-red;
-        clip: rect(0, 90rem, 0, 0);
-        animation: noise 2s infinite linear alternate-reverse;
-    }
-
-    &::before {
-        content: attr(data-trick);
-        position: absolute;
-        top: 0;
-        left: -1rem;
-        color: $color-yellow;
-        background-color: $color-main;
-        overflow: hidden;
-        text-shadow: 0.3rem 0 $color-glitch-red;
-        clip: rect(0, 90rem, 0, 0);
-        animation: noise 4s infinite linear alternate-reverse;
-    }
 }
 
 @keyframes noise {
@@ -55,7 +14,228 @@
     }
 }
 
-
 .arrow-page-down {
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 360px) {
+    .container-glitch {
+        padding: 20vh 0;
+        flex: 1 1 auto;
+        background: url(../images/start-page_background.png) no-repeat left/120%;;
+    }    
+
+    .start-page_image {
+        display: none;
+    }
+
+    .glitch {
+        color: $color-yellow;
+        position: relative;
+        font: normal 700 30px 'Zeppelin 53';
+        margin-top: 35px;
+
+        &::after {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: 0.5rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: -0.5rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 2s infinite linear alternate-reverse;
+        }
+
+        &::before {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: 0.3rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 4s infinite linear alternate-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 499px) {
+    .container-glitch {
+        padding: 20vh 0;
+        flex: 1 1 auto;
+        background: url(../images/start-page_background.png) no-repeat left/120%;;
+    }    
+
+    .start-page_image {
+        display: none;
+    }
+
+    .glitch {
+        color: $color-yellow;
+        position: relative;
+        font: normal 700 30px 'Zeppelin 53';
+        margin-top: 28px;
+
+        &::after {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: 0.5rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: -0.5rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 2s infinite linear alternate-reverse;
+        }
+
+        &::before {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: 0.3rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 4s infinite linear alternate-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .container-glitch {
+        padding: 20vh 0;
+        flex: 1 1 auto;
+        background: url(../images/start-page_background.png) no-repeat left/90%;;
+    }    
+
+    .start-page_image {
+        display: none;
+    }
+
+    .glitch {
+        color: $color-yellow;
+        position: relative;
+        font: normal 700 65px 'Zeppelin 53';
+
+        &::after {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: 0.5rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: -0.5rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 2s infinite linear alternate-reverse;
+        }
+
+        &::before {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: 0.3rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 4s infinite linear alternate-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .container-glitch {
+        padding: 20vh 0;
+        flex: 1 1 auto;
+    } 
+
+    .start-page_image {
+        background: url(../images/start-page_background.png) no-repeat left/20%;
+        max-width: 100%;
+    }
+
+    .glitch {
+        color: $color-yellow;
+        position: relative;
+        font: normal 700 110px 'Zeppelin 53';
+    
+        &::after {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: 0.5rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: -0.5rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 2s infinite linear alternate-reverse;
+        }
+    
+        &::before {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: 0.3rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 4s infinite linear alternate-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-glitch {
+        padding: 10vh 0;
+        flex: 1 1 auto;
+    }  
+
+    .start-page_image {
+        background: url(../images/start-page_background.png) no-repeat left/30%;
+        max-width: 100%;
+    }   
+
+    .glitch {
+        color: $color-yellow;
+        position: relative;
+        font: normal 700 100px 'Zeppelin 53';
+
+        &::after {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: 0.5rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: -0.5rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 2s infinite linear alternate-reverse;
+        }
+
+        &::before {
+            content: attr(data-trick);
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            color: $color-yellow;
+            background-color: $color-main;
+            overflow: hidden;
+            text-shadow: 0.3rem 0 $color-glitch-red;
+            clip: rect(0, 90rem, 0, 0);
+            animation: noise 4s infinite linear alternate-reverse;
+        }
+    }
 }
