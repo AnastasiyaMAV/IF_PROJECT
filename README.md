@@ -21,7 +21,7 @@
 
 ---
 
-![gif](https://github.com/AnastasiyaMAV/words_on_cards_project/blob/main/images/ESLI.gif)
+![gif](https://github.com/AnastasiyaMAV/words_on_cards_project/images/ESLI.gif)
 
 #### Используемые технологии:
 
