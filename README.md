@@ -21,8 +21,7 @@
 
 ---
 
-![gif](https://github.com/AnastasiyaMAV/IF_PROJECT/tree/main/images/ESLI.gif)
-
+![gif](https://github.com/AnastasiyaMAV/IF_PROJECT/blob/main/images/ESLI.gif)
 #### Используемые технологии:
 
 - HTML
